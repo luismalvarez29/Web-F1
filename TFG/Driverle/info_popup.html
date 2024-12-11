@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Establece la codificación de caracteres del documento como UTF-8 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la ventana gráfica para que el ancho sea el mismo que el del dispositivo y la escala inicial sea 1 -->
+
+    <link rel="stylesheet" href="../style.css">
+    <!-- Enlace a un archivo CSS externo para aplicar estilos adicionales -->
+
+    <title>Información</title>
+    <!-- Título de la página -->
+
+    <style>
+        /* Estilos para las celdas de la tabla */
+        th, td {
+            border: 1px solid black; /* Bordes de las celdas */
+            padding: 15px; /* Espaciado interno de las celdas */
+        }
+        /* Clases para el color de fondo de las celdas */
+        .orange-bg {
+            background-color: orange;
+        }
+        .green-bg {
+            background-color: green;
+        }
+        .purple-bg {
+            background-color: purple;
+        }
+        .datos {
+            border: none; /* Sin borde para las celdas con la clase datos */
+        }
+    </style>
+    <!-- Estilos CSS internos para personalizar la apariencia de la tabla y las celdas -->
+</head>
+<body>
+    <div id="info">
+        <!-- Contenedor principal para la información del juego -->
+        <h5 style="text-align: center;">
+            Driverle es un juego similar a Wordle sobre encontrar al piloto de F1 correcto.
+        </h5>
+        <!-- Descripción del juego centrada -->
+        <table>
+            <!-- Tabla que muestra el significado de los colores de fondo -->
+            <tr>
+                <td class="green-bg" style="width: 40px;"></td>
+                <td class="datos">Correcto</td>
+            </tr>
+            <tr>
+                <td class="purple-bg" style="width: 40px;"></td>
+                <td class="datos">Mayor</td>
+            </tr>
+            <tr>
+                <td class="orange-bg" style="width: 40px;"></td>
+                <td class="datos">Menor</td>
+            </tr>
+        </table>
+        <!-- Filas de la tabla explicando cada color de fondo -->
+    </div>
+
+    <button onclick="cerrarVentana()" style="text-align: center; margin-top: 50px; margin-left: 40%; margin-right: 50%;">Cerrar</button>
+    <!-- Botón que cierra la ventana emergente al hacer clic -->
+
+    <script>
+        // Función que cierra la ventana emergente
+        function cerrarVentana() {
+            window.close();
+        }
+    </script>
+    <!-- Script que define la función cerrarVentana para cerrar la ventana -->
+</body>
+</html>
